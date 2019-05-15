@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [scatmod](#scatmod)
@@ -15,17 +12,11 @@
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# scatmod
-Acoustic Scattering Models
-Scatmod is a platform to distribute and develop acoustic scattering models, with the aim of simulating acoustic targets (e.g. fish, zooplankton, phytoplankton, crustaceans, jellyfish, bubbles, etc.). 
-=======
 # scatmod - Open Source Acoustic Scattering Models for fisheries acoustics
 
 *scatmod* is a platform to distribute and develop acoustic scattering models, with the aim of simulating acoustic targets (e.g. fish, zooplankton, phytoplankton, crustaceans, jellyfish, bubbles, etc.). 
->>>>>>> 5511d9bc17af9c7d9a3f887cef9810132fcb4b91
-Scatmod aims to be a cross-language platform, containing models written in various languages, including Matlab, Python and R. 
+
+*scatmod* aims to be a cross-language platform, containing models written in various languages, including Matlab, Python and R. 
 In order to keep Scatmod consistent, documentation standards have been defined for all used languages.
 
 *scatmod* is developped and maintained by members of the [ICES WGFAST group](https://www.ices.dk/community/groups/Pages/WGFAST.aspx) originating from various institutes including [NWFSC NOAA](https://www.nwfsc.noaa.gov/), [Scripps Institute Of Oceanography](https://scripps.ucsd.edu/), [St Andrews University](https://risweb.st-andrews.ac.uk/portal/en/organisations/school-of-biology(a348f890-b967-4e22-a8ae-75e33143747f).html), [NIWA](https://www.niwa.co.nz/our-science/coasts-and-oceans) and [CMR](https://www.cmr.no/)
