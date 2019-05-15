@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [scatmod](#scatmod)
+  - [Types of scattering models](#types-of-scattering-models)
+  - [Available models and when to use/not to use them:](#available-models-and-when-to-usenot-to-use-them)
+  - [TO DO:](#to-do)
+    - [Analytical](#analytical)
+  - [Examples](#examples)
+    - [Installing](#installing)
+  - [Running the tests](#running-the-tests)
+  - [Primary Authors](#primary-authors)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # scatmod
 Acoustic Scattering Models
 Scatmod is a platform to distribute and develop acoustic scattering models, with the aim of simulating acoustic targets (e.g. fish, zooplankton, phytoplankton, crustaceans, jellyfish, bubbles, etc.). 
