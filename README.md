@@ -7,6 +7,7 @@
   - [About](#about)
   - [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
   - [Which model to use? --- Start only](#which-model-to-use-----start-only)
+  - [Model Descriptions](#model-descriptions)
   - [Multiscattering](#multiscattering)
   - [TO DO:](#to-do)
 - [Models in](#models-in)
