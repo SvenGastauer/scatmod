@@ -135,7 +135,7 @@ The idea is to talk about the different options to model multiscattering, e.g. s
 - Write documentation standard for R, Python and Matlab
 - Define validation standards for new models, e.g. Jupyter/Markdown templates for comparison to analystical model
 
-# Models in
+## Models in scatmod
 
 ### Analytical
 - Sphere and finite cylinde:
