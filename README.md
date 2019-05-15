@@ -4,20 +4,20 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents** 
 
-  - [About](#about)
-  - [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
-  - [Which model to use? --- Start only](#which-model-to-use-----start-only)
-  - [Model Descriptions](#model-descriptions)
-  - [Multiscattering](#multiscattering)
-  - [TO DO:](#to-do)
-- [Models in](#models-in)
-    - [Analytical](#analytical)
-  - [Examples](#examples)
-    - [Installing](#installing)
-  - [Running the tests](#running-the-tests)
-  - [Primary Authors](#primary-authors)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
+- [About](#about)
+- [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
+- [Which model to use? --- Start only](#which-model-to-use-----start-only)
+- [Model Descriptions](#model-descriptions)
+- [Multiscattering](#multiscattering)
+- [TO DO:](#to-do)
+- [Models in scatmod](#models-in-scatmod)
+  - [Analytical](#analytical)
+- [Examples](#examples)
+  - [Installing](#installing)
+- [Running the tests](#running-the-tests)
+- [Primary Authors](#primary-authors)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
