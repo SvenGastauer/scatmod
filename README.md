@@ -1,8 +1,9 @@
+# scatmod - Open Source Acoustic Scattering Models for fisheries acoustics
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents** 
 
-- [scatmod - Open Source Acoustic Scattering Models for fisheries acoustics](#scatmod---open-source-acoustic-scattering-models-for-fisheries-acoustics)
   - [About](#about)
   - [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
   - [Which model to use? --- Start only](#which-model-to-use-----start-only)
@@ -19,23 +20,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [scatmod - Open Source Acoustic Scattering Models for fisheries acoustics](#scatmod---open-source-acoustic-scattering-models-for-fisheries-acoustics)
-  - [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
-  - [Which model to use? --- Start only](#which-model-to-use-----start-only)
-  - [Multiscattering](#multiscattering)
-  - [TO DO:](#to-do)
-- [Models in](#models-in)
-    - [Analytical](#analytical)
-  - [Examples](#examples)
-    - [Installing](#installing)
-  - [Running the tests](#running-the-tests)
-  - [Primary Authors](#primary-authors)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-
-# scatmod - Open Source Acoustic Scattering Models for fisheries acoustics
 
 ## About
 *scatmod* is a platform to distribute and develop acoustic scattering models, with the aim of simulating acoustic targets (e.g. fish, zooplankton, phytoplankton, crustaceans, jellyfish, bubbles, etc.). 
