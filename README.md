@@ -1,12 +1,18 @@
-# scatmod
-Acoustic Scattering Models
-Scatmod is a platform to distribute and develop acoustic scattering models, with the aim of simulating acoustic targets (e.g. fish, zooplankton, phytoplankton, crustaceans, jellyfish, bubbles, etc.). 
+# scatmod - Open Source Acoustic Scattering Models for fisheries acoustics
+
+*scatmod* is a platform to distribute and develop acoustic scattering models, with the aim of simulating acoustic targets (e.g. fish, zooplankton, phytoplankton, crustaceans, jellyfish, bubbles, etc.). 
 Scatmod aims to be a cross-language platform, containing models written in various languages, including Matlab, Python and R. 
 In order to keep Scatmod consistent, documentation standards have been defined for all used languages.
 
-## Types of scattering models
+*scatmod* is developped and maintained by members of the [ICES WGFAST group](https://www.ices.dk/community/groups/Pages/WGFAST.aspx) originating from various institutes including [NWFSC NOAA](https://www.nwfsc.noaa.gov/), [Scripps Institute Of Oceanography](https://scripps.ucsd.edu/), [St Andrews University](https://risweb.st-andrews.ac.uk/portal/en/organisations/school-of-biology(a348f890-b967-4e22-a8ae-75e33143747f).html), [NIWA](https://www.niwa.co.nz/our-science/coasts-and-oceans) and [CMR](https://www.cmr.no/)
+
+## Types of scattering models --- Start only
 
 Three major categories of scattering models can be distinguished:
+
+<hr>
+
+
 - Analytic / semi-analythic models
   * *Application:* for simple geometric shapes (e.g. spheres, cylinders, prolate spheroids)
   * *Advantages:* exact, fast, not restricted in frequency/material properties
@@ -15,6 +21,8 @@ Three major categories of scattering models can be distinguished:
 <p align="center">
 <a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/analytical_illustration.png"  height="150"></a>
 </p>
+
+<hr>
 
 - Numerical models
   * *Models:* Finite Element Methods (FEM), Boundary Element Methods (BEM), combinations of those
@@ -29,6 +37,9 @@ Three major categories of scattering models can be distinguished:
 <p align="center">    
 <a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/numeric_illustration.png"  height="150"></a>
 </p>
+
+<hr>
+
 
 - Approximate models
   * *Models:* Kirchhoff Ray Mode (KRM), Distorted Wave Born Approximation(DWBA), Deformed Cylinder Model (DCM), Resonance Scattering, etc.
@@ -45,15 +56,54 @@ Three major categories of scattering models can be distinguished:
 <a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/approx_illustration.png"  height="150"></a>
 </p>
 
+## Which model to use? --- Start only
 
-## Available models and when to use/not to use them:
+<hr>
 
 
+- **Gas bubbles or swimbladders**
+ * *Best:* 
+  - Numerical models for complex shapes e.g. BEM, FEM
+  - Analystical solutions for simple shapes
+ * *Easier:*
+  - Resonance scattering: Find he resonance frequency, high frequencies for small bubbles, low frequencies for swimbladders
+  - KRM: Limited to high frequencies, can be used for flesh and swimbladder if swimbladdered fish are to be modelled
+ *Examples:*
+
+<hr>
+
+
+- **Bones**
+ * *Best:* 
+  - Numerical models for complex shapes e.g. BEM, FEM
+  - Analystical solutions for simple shapes
+ * *Easier:*
+  - DCM 
+ *Examples:*
+
+<hr>
+
+ 
+- **Fluid-like / flesh**
+ * *Best:*
+  - Numerical models for complex shapes e.g. BEM, FEM
+  - Analystical solutions for simple shapes
+ * *Easier:*
+  - DCM 
+  - DWBA
+  - KRM
+*Examples:*
+
+## Multiscattering 
+
+-> Put some content here...
+The idea is to talk about the different options to model multiscattering, e.g. simple linear addition, the case of bubbles, the more complex cse of reality (mention possible methods and BEM/FEM options)
 
 ## TO DO:
 - Write documentation standard for R, Python and Matlab
 - Define validation standards for new models, e.g. Jupyter/Markdown templates for comparison to analystical model
-Models to be included:
+
+# Models in
 
 ### Analytical
 - Sphere and finite cylinde:
