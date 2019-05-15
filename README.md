@@ -4,6 +4,48 @@ Scatmod is a platform to distribute and develop acoustic scattering models, with
 Scatmod aims to be a cross-language platform, containing models written in various languages, including Matlab, Python and R. 
 In order to keep Scatmod consistent, documentation standards have been defined for all used languages.
 
+## Types of scattering models
+
+Three major categories of scattering models can be distinguished:
+- Analytic / semi-analythic models
+  * *Application:* for simple geometric shapes (e.g. spheres, cylinders, prolate spheroids)
+  * *Advantages:* exact, fast, not restricted in frequency/material properties
+  * *Disadvantages:* not possible to resolve for complex, realistic targets, assumes a single scattering object
+  
+<p align="center">
+<a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/analytical_illustration.png"  height="150"></a>
+</p>
+
+- Numerical models
+  * *Models:* Finite Element Methods (FEM), Boundary Element Methods (BEM), combinations of those
+  * *Application:* Arbitrary shapes, frequencies and materials
+  * *Advantages:* 
+    - allows for modelling of complex shapes and internal structures
+    - includes diffraction / Fluid-Structure-Interaction (FSI) 
+    - can be applied to arbitrary materials and frequencies
+  * *Disadvantages:* 
+    - Computationally complex and expensive
+
+<p align="center">    
+<a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/numeric_illustration.png"  height="150"></a>
+</p>
+
+- Approximate models
+  * *Models:* Kirchhoff Ray Mode (KRM), Distorted Wave Born Approximation(DWBA), Deformed Cylinder Model (DCM), Resonance Scattering, etc.
+  * *Application:* Various scattering surface and orientations for a range of frequencies (model dependent)
+  * *Advantages:* 
+    - Can represent arbitrary scattering surface and orientations
+    - (very) fast and relatively simple
+  * *Disadvantages:*
+    - Frequency restrictions for some models
+    - Does not include diffraction effects or internal structure implicitly
+    - Multibody scattering generally assumed to be linearly additive
+ 
+<p align="center">
+<a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/approx_illustration.png"  height="150"></a>
+</p>
+
+
 ## Available models and when to use/not to use them:
 
 
