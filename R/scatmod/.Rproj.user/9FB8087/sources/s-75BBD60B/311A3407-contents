@@ -1,0 +1,65 @@
+function [u,p] = Analytic(freq,n_max,theta)
+#' Modification of Herwig Peters analytic solution for a point excited
+#' spherical elastic shell in a fluid medium to 'vectorize' the code to work
+#' for multiple theta for a fixed frequency
+
+# clear all
+freq = 50
+n_max = 150
+
+
+# constants
+r = 1.00
+t = 0.01
+E = (210E9)*(1-0.02i)
+# E = (210E9); %no damping
+nu = 0.3
+rho_s = 7860
+rho_f = 1000
+c = 1500
+F = 1
+beta2 = t^2/(12*r^2)
+c_p = sqrt(E/(rho_s*(1-nu^2)))
+omega = 2*pi*freq
+k = (omega/c)
+Omega = omega*r/c_p
+
+
+u = 0
+p = 0
+keep = FALSE
+for n=0:n_max
+phi_n = n*(n+1)
+A = - (1+3*nu+phi_n-beta2*(1-nu-phi_n^2-nu*phi_n))
+B = + (phi_n-2)*(1-nu^2) + beta2*(phi_n^3-4*phi_n^2+phi_n*(5-nu^2)-2*(1-nu^2))
+
+Omegan2_2 = - A/2 - (A^2 - 4*B)^(1/2)/2
+Omegan2_1 = - A/2 + (A^2 - 4*B)^(1/2)/2
+if Omegan2_1 < 0
+Omegan2_1 = 0
+end
+
+hn = SphericalHankel(n,k*r)
+hn_diff = SphericalHankel_1st_deriv(n,k*r)
+zn = 1i*rho_f*c*hn/hn_diff
+Zn = -1i*t/r*rho_s*c_p*(Omega^2-Omegan2_1)*(Omega^2-Omegan2_2)/(Omega^3-Omega*(n^2+n-1+nu))
+
+% wrong in: "A comparison of FE–BE coupling schemes for large-scale
+    % problems with fluid–structure interaction"
+% use legendreP over legendre for P(n, m=0) legendre polynomials
+Pn = legendreP_DW(n,cos(theta))
+
+un = F*1i/(4*pi*r^2*omega)*((2*n+1)/(Zn+zn)*Pn);
+pn = F/(4*pi*r^2)*((2*n+1)*zn/(Zn+zn)*Pn);
+
+if abs(hn_diff) > 1E300 || keep
+keep = true;
+u = u;
+p = p;
+else
+  u = u + un;
+p = p + pn;
+upto = n;
+end
+
+end
