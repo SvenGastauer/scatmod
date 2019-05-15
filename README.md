@@ -123,7 +123,7 @@ Three major categories of scattering models can be distinguished:
 - [Analytical fluid-like sphere](https://github.com/SvenGastauer/scatmod/blob/master/docs/Analytical_FluidLikeSphere.ipynb)
 
 **DWBA**
-- []
+- [DWBA](https://github.com/SvenGastauer/scatmod/blob/master/docs/DWBA.ipynb)
 
 ## Multiscattering 
 
