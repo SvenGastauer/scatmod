@@ -86,11 +86,11 @@ Three major categories of scattering models can be distinguished:
 
 - **Gas bubbles or swimbladders**
  * *Best:* 
-  - Numerical models for complex shapes e.g. BEM, FEM
-  - Analystical solutions for simple shapes
+    - Numerical models for complex shapes e.g. BEM, FEM
+    - Analystical solutions for simple shapes
  * *Easier:*
-  - Resonance scattering: Find he resonance frequency, high frequencies for small bubbles, low frequencies for swimbladders
-  - KRM: Limited to high frequencies, can be used for flesh and swimbladder if swimbladdered fish are to be modelled
+    - Resonance scattering: Find he resonance frequency, high frequencies for small bubbles, low frequencies for swimbladders
+    - KRM: Limited to high frequencies, can be used for flesh and swimbladder if swimbladdered fish are to be modelled
  *Examples:*
 
 <hr>
@@ -98,10 +98,10 @@ Three major categories of scattering models can be distinguished:
 
 - **Bones**
  * *Best:* 
-  - Numerical models for complex shapes e.g. BEM, FEM
-  - Analystical solutions for simple shapes
+    - Numerical models for complex shapes e.g. BEM, FEM
+    - Analystical solutions for simple shapes
  * *Easier:*
-  - DCM 
+    - DCM 
  *Examples:*
 
 <hr>
@@ -109,13 +109,21 @@ Three major categories of scattering models can be distinguished:
  
 - **Fluid-like / flesh**
  * *Best:*
-  - Numerical models for complex shapes e.g. BEM, FEM
-  - Analystical solutions for simple shapes
+    - Numerical models for complex shapes e.g. BEM, FEM
+    - Analystical solutions for simple shapes
  * *Easier:*
-  - DCM 
-  - DWBA
-  - KRM
+    - DCM 
+    - DWBA
+    - KRM
 *Examples:*
+
+## Model Descriptions
+
+**Analytical models**
+- [Analytical fluid-like sphere](https://github.com/SvenGastauer/scatmod/blob/master/docs/Analytical_FluidLikeSphere.ipynb)
+
+**DWBA**
+- []
 
 ## Multiscattering 
 
