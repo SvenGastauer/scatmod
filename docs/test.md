@@ -20,9 +20,9 @@ where:
 * <img src="/docs/tex/39b09f0f841f556b1bdd88964f27a271.svg?invert_in_darkmode&sanitize=true" align=middle width=26.88577154999999pt height=23.488575000000026pt/> is the position vector along the body axis,  
 * <img src="/docs/tex/6c4adbc36120d62b98deef2a20d5d303.svg?invert_in_darkmode&sanitize=true" align=middle width=8.55786029999999pt height=14.15524440000002pt/> in the general model is the integration vloume of the body with the position vector <img src="/docs/tex/39b09f0f841f556b1bdd88964f27a271.svg?invert_in_darkmode&sanitize=true" align=middle width=26.88577154999999pt height=23.488575000000026pt/>  
 * <img src="/docs/tex/f9f9c5c673cd3cfbc89d70e50d5566e6.svg?invert_in_darkmode&sanitize=true" align=middle width=15.77667134999999pt height=14.15524440000002pt/> and <img src="/docs/tex/22ef6a467610eca74b917d0b8925099a.svg?invert_in_darkmode&sanitize=true" align=middle width=15.330894149999992pt height=14.15524440000002pt/> are related to the body material properties with <img src="/docs/tex/3cf4fbd05970446973fc3d9fa3fe3c41.svg?invert_in_darkmode&sanitize=true" align=middle width=8.430376349999989pt height=14.15524440000002pt/> - the density contrast and <img src="/docs/tex/2ad9d098b937e46f9f58968551adac57.svg?invert_in_darkmode&sanitize=true" align=middle width=9.47111549999999pt height=22.831056599999986pt/> the soundspeed contrast. Both contrasts are the ratio of the density (<img src="/docs/tex/df3ff70aed72639243c661ee9225263f.svg?invert_in_darkmode&sanitize=true" align=middle width=13.150207949999997pt height=24.575218800000012pt/>) or soundspeed (<img src="/docs/tex/2756c6e77e9e99f16b24e5498afd8387.svg?invert_in_darkmode&sanitize=true" align=middle width=12.204606149999998pt height=23.58895770000001pt/>) inside the body and the surrounding fluid.  
-    + $\gamma_k = \frac{(1 - gh^2)}{gh^2}$ is the compressibility  
+    -  $\gamma_k = \frac{(1 - gh^2)}{gh^2}$ is the compressibility  
 
-    + $\gamma_{\rho} = \frac{(g - 1)}{g}$  is related to the density contrast  
+    -  $\gamma_{\rho} = \frac{(g - 1)}{g}$  is related to the density contrast  
     
 
 * <img src="/docs/tex/3bf0fa37c82e15ab198d2b9aaf936a76.svg?invert_in_darkmode&sanitize=true" align=middle width=15.667843949999991pt height=22.465723500000017pt/> is a Bessel function of the first kind and first order  
