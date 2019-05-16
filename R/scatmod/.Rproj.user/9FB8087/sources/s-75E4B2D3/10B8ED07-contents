@@ -191,7 +191,7 @@ LegPoly <- function(degree, coeffs){
 #' TS <- sapply(fs,TS.sphere2,r=r,a=a,c=c,h=h,g=g,rho=rho)
 #' plot(fs,TS, type="l", xlab="Frequency [Hz]",ylab="TS [dB re m2]")
 #' @export
-TS.sphere2 <- function(f,r,a,c,h,g, rho){
+TS.sphere <- function(f,r,a,c,h,g, rho){
 
   ###Basic calculations
 
