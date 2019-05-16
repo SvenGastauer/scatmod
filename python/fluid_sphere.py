@@ -216,3 +216,54 @@ def fluid_sphere(f,Radius, Range, Rho_w,Rho_b,Theta,c_w,c_b):
     
     #print('Backscatter TS of the sphere is %.2f dB re 1m^2'%TS)
     return(TS)
+
+'''
+
+:desc Simplified analytical TS for a fluid sphere following Jehc et al 2015, modified from
+ Anderson, V. C., "Sound scattering from a fluid sphere", 
+ J. Acoust. Soc. America, 22 (4), pp 426-431, July 1950
+
+:param c: Sound velocity external fluid (m/s)
+:type c: float
+
+:param f: acoustic frequency (Hz; s^-1)
+:type f: int
+
+:param h: Sound verlocity contrast
+:type c_b: float
+
+:param r: DIstance to the center of the sphere (m)
+:type r: float
+
+:param a: Radius of the scattering sphere (m)
+:type a: float
+
+:param g: Density contrast
+:type g: float
+
+:param rho: Density of the surrounding fluid (kg m^-3)
+:type rho: float
+'''
+
+def fluid_sphere_simple(f,r,a,c,h,g,rho):
+    #External fluid
+    k0 = k(c,f) #Wavenumber surrounding fluid
+    ka = k0 * a #Wavenumber surrounding fluid * radius
+    
+    #Internal fluid
+    k1 = k(h*c,f) #Wavenumber internal fluid
+    k1a = k1 * a  #Wavenumber internal fluid * radius
+    #rho1 <- g *rho #density internal fluid
+    Cn_fun = lambda x:((ss.spherical_jn(x, k1a, derivative=True) * ss.spherical_yn(x, ka))\
+                       /(ss.spherical_jn(x,k1a) * ss.spherical_jn(x,ka,  derivative=True))\
+                       - g * h * (ss.spherical_yn(x,ka, derivative=True) \
+                                  / ss.spherical_jn(x,ka, derivative=True))) \
+                       /((ss.spherical_jn(x,k1a, derivative=True) * ss.spherical_jn(x,ka))\
+                         /(ss.spherical_jn(x,k1a) * ss.spherical_jn(x,ka, derivative=True))\
+                         - g * h)
+    n = np.arange(0,round(ka+20,0)).astype(int)
+    Cn = list(map(Cn_fun,n))
+    A = -1 / (1 + 1j * np.asarray(Cn))
+    fbs = -1j / k0 * np.sum((-1)**n * (2*n +1) * A)
+    TS = 10 * np.log10(abs(fbs)**2)
+    return(TS)

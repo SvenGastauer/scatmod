@@ -2,18 +2,18 @@
     "collab_server" : "",
     "contents" : "",
     "created" : 1557924797078.000,
-    "dirty" : false,
+    "dirty" : true,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4072486875",
+    "hash" : "0",
     "id" : "10B8ED07",
     "lastKnownWriteTime" : 1557995184,
-    "last_content_update" : 1557995184620,
+    "last_content_update" : 1558014849637,
     "path" : "C:/Users/sveng/OneDrive - University of Tasmania/Nextcloud/GitHub/echopype_fork/scatmod/R/scatmod/R/weak_sphere.R",
     "project_path" : "R/weak_sphere.R",
     "properties" : {
-        "cursorPosition" : "193,9",
-        "scrollLine" : "189"
+        "cursorPosition" : "190,57",
+        "scrollLine" : "178"
     },
     "relative_order" : 1,
     "source_on_save" : false,
