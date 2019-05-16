@@ -1,18 +1,3 @@
----
-title: "Running a DWBA simulation programmatically"
-author: "Sven Gastauer"
-date: "`r Sys.Date()`"
-bibliography: vignettes.bib
-output:
-  rmarkdown::html_vignette:
-    toc: true
-    toc_depth: 4
-vignette: >
-  %\VignetteIndexEntry{Running a DWBA simulation programmatically}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\usepackage[utf8]{inputenc}
----
-
 This vignette will provide a brief description of the DWBA model used within the ZooScatR package, explain the needed input parameters and provide a few examples.  
 
 ## Quick Start
