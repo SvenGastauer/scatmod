@@ -13,12 +13,6 @@ vignette: >
   %\usepackage[utf8]{inputenc}
 ---
 
-```{r setup, echo = FALSE, message = FALSE}
-knitr::opts_chunk$set(collapse = T, comment = "#>")
-options(tibble.print_min = 4L, tibble.print_max = 4L)
-library(ZooScatR)
-set.seed(1014)
-```
 This vignette will provide a brief description of the DWBA model used within the ZooScatR package, explain the needed input parameters and provide a few examples.  
 
 ## Quick Start
