@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu May 16 10:32:03 2019
-
-@author: Sven Gastauer
-@licence: GPLv3 or higher
-@maintainer: Sven Gastauer
-@status: development
-
-"""
+'''
+:author Sven Gastauer
+:licence MIT
+'''
 ## import packages
 import numpy as np
 import scipy.special as ss
