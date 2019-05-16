@@ -22,9 +22,9 @@ where:
 * $\vec{r_{pos}}$ is the position vector along the body axis,  
 * $v$ in the general model is the integration vloume of the body with the position vector $\vec{r_{pos}}$  
 * $\gamma_k$ and $\gamma_{\rho}$ are related to the body material properties with $g$ - the density contrast and $h$ the soundspeed contrast. Both contrasts are the ratio of the density ($\frac{\rho_b}{\rho_s}$) or soundspeed ($\frac{c_b}{c_s}$) inside the body and the surrounding fluid.  
-    -  $\gamma_k = \frac{(1 - gh^2)}{gh^2}$ is the compressibility  
+    *  $\gamma_k = \frac{(1 - gh^2)}{gh^2}$ is the compressibility  
 
-    -  $\gamma_{\rho} = \frac{(g - 1)}{g}$  is related to the density contrast  
+    *  $\gamma_{\rho} = \frac{(g - 1)}{g}$  is related to the density contrast  
     
 
 * $J_1$ is a Bessel function of the first kind and first order  
@@ -46,7 +46,7 @@ Based on the previously discussed parts of the equation and the structure of the
   
 A brief description, the input format, the influence of the parameter and its name within the parameter list are outlined below:  
 
-###Shape parameters  
+### Shape parameters  
    
 ### Orientation parameters:  
 
