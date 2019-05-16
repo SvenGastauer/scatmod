@@ -54,7 +54,9 @@ res$rplot #Show the result plot
 ## The DWBA model - a brief explanation
 A detailed description of the DWBA model and its application to the scattering properties of zooplankton can be found in  
 The DWBA for a body of an arbitrary shape and size for an arbitrary frequency can be written as:
-$$f_{bs} = \frac{k_s}{4}\int\int\int_v(\gamma_k - \gamma_{\rho})e^{2i\vec{k_b}\vec{r_v}}dv $$  
+$$
+f_{bs} = \frac{k_s}{4}\int\int\int_v(\gamma_k - \gamma_{\rho})e^{2i\vec{k_b}\vec{r_v}}dv
+$$  
 
 or under the simplified form for a deformed cylinder:    
 $$f_{bs} = \frac{k_s}{4}\int_{\vec{r_{pos}}}a_c(\gamma_\kappa - \gamma_{\rho})e^{2i\vec{k_b}\vec{r_{pos}}}\frac{J_1(2k_ba_{c}cos\beta_{tilt})}{cos\beta_{tilt}} $$
