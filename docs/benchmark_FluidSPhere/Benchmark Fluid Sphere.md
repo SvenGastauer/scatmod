@@ -164,20 +164,13 @@ TSdf['R - Py Sim'] = np.abs(TSdf['Python Simp'] - TSdf['R'])
 print('Mean dB differences between the models:')
 round(TSdf.mean(axis=0)[4:],3)
 ```
+Mean dB differences between the models:
 
-    Mean dB differences between the models:
-    
-
-
-
-
-    Py - Py Sim    0.002
-    R - Py         0.002
-    R - Py Sim     0.000
-    dtype: float64
-
-
-
+| Model | dB diff|
+|---|---|
+|Py - Py Sim |0.002|
+|R - Py |0.002|
+|R - Py Sim |0.000|
 
 ```sos
 #Create TS comparison plot
@@ -227,24 +220,6 @@ timedf = pd.DataFrame({ 'Time single':[tel_s0, tel_s1, tel_sR],
 
 round(timedf,4)
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -271,10 +246,6 @@ round(timedf,4)
     </tr>
   </tbody>
 </table>
-</div>
-
-
-
 
 ```sos
 timedf.plot.bar(rot=0, figsize=(12,6))
