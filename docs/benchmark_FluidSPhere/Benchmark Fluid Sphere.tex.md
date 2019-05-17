@@ -1,6 +1,3 @@
-
-<link rel="stylesheet" href="https://cdn.jupyter.org/notebook/5.1.0/style/style.min.css">
-
 # Benchmark analytical solution for fluid-like sphere
 This notebook provides a benchmark test (comparing results and timing) for the analytical solution of a fluid-like sphere based on Anderson (1950) as implemented in *scatmod*, using methods defined in Python and R.
 
