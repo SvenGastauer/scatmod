@@ -181,14 +181,14 @@ LegPoly <- function(degree, coeffs){
 #' @param g Density contrast inside/surrounding fluid
 #' @param rho Density of surrounding fluid
 #' @examples
-#' fs <- as.list(seq(10,400, by=1)*1000) #Frequencies
+#' fs <- as.list(seq(1,300, by=1)*1000) #Frequencies
 #' r <- 10 #range
 #' a <- 0.01 # radius
-#' c <- 1477.4 #soundspeed surrounding fluid
-#' rho <- 1026.8 #density surrounding fluid
-#' g <- 1028.9/rho #density contrast
-#' h <- 1480.3/c #soundspeed contrast
-#' TS <- sapply(fs,TS.sphere2,r=r,a=a,c=c,h=h,g=g,rho=rho)
+#' c <- 1500 #soundspeed surrounding fluid
+#' rho <- 1026 #density surrounding fluid
+#' g <- 1.0025 #density contrast
+#' h <- 1.0025 #soundspeed contrast
+#' TS <- sapply(fs,TS.sphere,r=r,a=a,c=c,h=h,g=g,rho=rho)
 #' plot(fs,TS, type="l", xlab="Frequency [Hz]",ylab="TS [dB re m2]")
 #' @export
 TS.sphere <- function(f,r,a,c,h,g, rho){
