@@ -80,7 +80,7 @@ Three major categories of scattering models can be distinguished:
 <a href="url"><img src="https://github.com/SvenGastauer/scatmod/blob/master/pictures/approx_illustration.png"  height="150"></a>
 </p>
 
-## Which model to use? --- Start only
+## Which model to use?
 
 <hr>
 
@@ -176,7 +176,6 @@ The idea is to talk about the different options to model multiscattering, e.g. s
 
 ## TO DO:
 - Write documentation standard for R, Python and Matlab
-- Define validation standards for new models, e.g. Jupyter/Markdown templates for comparison to analystical model
 
 ## Models in scatmod
 
