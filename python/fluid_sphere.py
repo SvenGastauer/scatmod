@@ -236,11 +236,9 @@ def fluid_sphere(f,Radius, Range, Rho_w,Rho_b,Theta,c_w,c_b):
 :param g: Density contrast
 :type g: float
 
-:param rho: Density of the surrounding fluid (kg m^-3)
-:type rho: float
 '''
 
-def fluid_sphere_simple(f,r,a,c,h,g,rho):
+def fluid_sphere_simple(f,r,a,c,h,g):
     #External fluid
     k0 = k(c,f) #Wavenumber surrounding fluid
     ka = k0 * a #Wavenumber surrounding fluid * radius
@@ -262,3 +260,96 @@ def fluid_sphere_simple(f,r,a,c,h,g,rho):
     fbs = -1j / k0 * np.sum((-1)**n * (2*n +1) * A)
     TS = 10 * np.log10(abs(fbs)**2)
     return(TS)
+
+'''
+    desc: Spherical Hankel Function
+    :param n: Order
+    :type n: float
+    
+    :param z: Argument of the Bessel/Hankel function
+    :type z: float
+'''
+def sphericalHankel(n,z):
+    hn_real = np.sqrt(np.pi / (2 * z)) *ss.jv(n + 0.5,z)
+    hn_imag = np.sqrt(np.pi / (2 * z)) * ss.yv(n + 0.5,z)
+    hn = hn_real +  hn_imag * 1j
+    return(hn)
+    
+'''
+    desc: Derivate of the First Order Spherical Hankel Function
+    :param n: Order
+    :type n: float
+    
+    :param z: Argument of the Bessel/Hankel function
+    :type z: float
+'''
+    
+def sphericalHankel_deriv(n, z):
+    if n == 0:
+        Hankel_n = (np.sqrt((np.pi) / (2 * z ))) * ss.jv(n+1/2, z)+\
+        1j * (np.sqrt ( np.pi / (2 * z ))) * ss.yv(n + 1 / 2, z)
+        Hankel_nplus1 = (np.sqrt(np.pi / ( 2 * z))) * ss.jv(n + 3 / 2, z) +\
+        1j * (np.sqrt ( np.pi / (2 * z ))) * ss.yv(n + 3 / 2,z)
+        return((n / z) * Hankel_n - Hankel_nplus1)
+    elif n > 0:
+        Hankel_n = (np.sqrt(np.pi / (2 * n))) * ss.jv(n + 1 / 2, z)+ \
+        1j * (np.sqrt(np.pi / ( 2 * z))) * ss.yv(n + 1 / 2 , z)    
+        Hankel_ntake1 = (np.sqrt( np.pi / (2 * z))) * ss.jv(n - 1 / 2,z) +\
+        1j * (np.sqrt(np.pi / (2 * z))) * ss.yv(n - 1 / 2, z)
+        return(Hankel_ntake1 - ((n + 1) / z) * Hankel_n)
+
+'''
+
+:desc Simplified analytical TS for a pressure release sphere following Jech et al 2015, modified from
+ Anderson, V. C., "Sound scattering from a fluid sphere", 
+ J. Acoust. Soc. America, 22 (4), pp 426-431, July 1950
+
+:param c: Sound velocity external fluid (m/s)
+:type c: float
+
+:param f: acoustic frequency (Hz; s^-1)
+:type f: int
+
+:param a: Radius of the scattering sphere (m)
+:type a: float
+
+'''
+def pressure_release_sphere_simple(f,a,c):
+    #External fluid
+    k0 = k(c,f) #Wavenumber surrounding fluid
+    ka = k0 * a #Wavenumber surrounding fluid * radius
+    
+    n = np.arange(0,round(ka+20,0)).astype(int)
+    A_fun = lambda x: - ss.spherical_jn(x,ka) / sphericalHankel(x,ka)
+    A = list(map(A_fun,n))
+    fbs = -1j / k0 * np.sum((-1)**n * (2*n +1) * A)
+    TS = 10 * np.log10(abs(fbs)**2)
+    return(TS)     
+
+'''
+
+:desc Simplified analytical TS for a rigid sphere following Jech et al 2015, modified from
+ Anderson, V. C., "Sound scattering from a fluid sphere", 
+ J. Acoust. Soc. America, 22 (4), pp 426-431, July 1950
+
+:param c: Sound velocity external fluid (m/s)
+:type c: float
+
+:param f: acoustic frequency (Hz; s^-1)
+:type f: int
+
+:param a: Radius of the scattering sphere (m)
+:type a: float
+
+'''
+def rigid_sphere_simple(f,a,c):
+    #External fluid
+    k0 = k(c,f) #Wavenumber surrounding fluid
+    ka = k0 * a #Wavenumber surrounding fluid * radius
+    n = np.arange(0,round(ka+20,0)).astype(int)
+    A_fun = lambda x: - ss.spherical_jn(x, ka, derivative = True) / \
+    sphericalHankel_deriv(x, ka)
+    A = list(map(A_fun,n))
+    fbs = -1j / k0 * np.sum((-1)**n * (2*n +1) * A)
+    TS = 10 * np.log10(abs(fbs)**2)
+    return(TS)     
