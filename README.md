@@ -5,8 +5,12 @@
 **Table of Contents** 
 
 - [About](#about)
-- [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
-- [Which model to use? --- Start only](#which-model-to-use-----start-only)
+- [Licence](#licence)
+- [Types of scattering models](#types-of-scattering-models)
+- [Which model to use?](#which-model-to-use)
+  - [Overview Table](#overview-table)
+    - [Model Acoronyms:](#model-acoronyms)
+    - [References:](#references)
 - [Model Descriptions](#model-descriptions)
 - [Multiscattering](#multiscattering)
 - [TO DO:](#to-do)
