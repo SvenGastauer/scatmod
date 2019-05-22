@@ -83,7 +83,45 @@ Three major categories of scattering models can be distinguished:
 ## Which model to use? --- Start only
 
 <hr>
+Modified from Jech et al. (2015)
 
+| Model       | Accuracy / Type           | Range of Validity  | Limitations  | Examples  |
+|---|---|---|---|---|
+| MSS | Exact / Analytical | Canonical shapes (currently 11 available) | Convergence issues with some shapes  | Anderson (1950)      |
+| BEM | Quasi-exact / Numerical | All shapes, all frequencies, all angles | High computational demands (slightly better with Fast-Multipole BEM) | Francis et al. (1998); Francis and Foote (2003);  Okumura et al. (2003)|
+| FEM | Quasi-exact / Numerical | All shapes, all frequencies, all angles | High computational demands | Zampolli et al. (2007); Macaulay et al. (2013)|
+| FMM | Exact / Analytical      | If Axisymmetric - All shapes, all frequencies, all angles  | Non-axisymmetric, convergence issues at high aspect ratios| Reeder and Stanton (2004)|
+| KA | Approximate| High Frequencies only, near normal incidence, homogenous material| Off-normal incidence, low frequencies, no circumferential waves| Macaulay et al. (2013)|
+| KRM | Approximate| All frequencies, homogenous material; at high frequencies: high aspect ratios; at low frequencies: near-normal incidence |  Off-normal incidence, no circumferential waves, no longitudinal modes of vibration near resonance| Horne et al. (2000); Macaulay et al. (2013); Gastauer et al. (2016)|
+| Modal series based DCM| Approximate| Near normal incidence; all frequencies; circular cross-sections; all material | off-normal incidence, low aspect ratios, irregular shapes with high local slopes| Gorska and Ona (2003); Stanton (1989) |
+| DWBA (incl PT-DWBA,SDWBA) | Approximate| Weak scatterers (g and h < 1.005 i.e. < 5%), all shapes, all angles | Strong scatterers (g and h > 5%)|Chu and Ye (1999); Demer et al. (2003); Calise and Skaret (2011); Gastauer et al. (2019)  |
+
+### Model Acoronyms:
+- MSS - Exact Modal Series Solutions  
+- BEM - Boundary Element Model  
+- FEM - Finite Element Model  
+- FMM - Fourier Matching Method  
+- KA - Kirchhoff Approximation  
+- DCM - Deformed Cylinder scattering Model
+
+
+### References:
+-  *Anderson, V. C. (1950). Sound scattering from a fluid sphere. The Journal of the Acoustical Society of America, 22(4), 426-431.*  
+-  *Calise, L., and Skaret, G. (2011). “Sensitivity investigation of the SDWBA Antarctic krill target strength model to fatness, material contrasts and orientation,” Ccamlr Science 18, 97–122.*
+-  *Chu, D., and Ye, Z. (1999). “A phase-compensated distorted wave born approximation representation of the bistatic scattering by weakly scattering objects: Application to zooplankton,” J. Acoust. Soc. Am.106, 1732–1743.*  
+-  *Demer, D. A., and Conti, S. G. (2003). “Reconciling theoretical versus empirical target strengths of krill: Effects of phase variability on the distorted-wave Born approximation,” ICES J. Mar. Sci. 60, 429–434.*  
+-  *Francis, D. T., Foote, K. G., Alippi, A., & Cannelli, G. B. (1998). ‘Boundary-element-model predictions of acoustic scattering by swimbladder-bearing fish. In Proceedings of the Fourth European Conference on Underwater Acoustics (Vol. 1, pp. 255-260). Rome: CNR-IDAC.*  
+-  *Francis, D. T., & Foote, K. G. (2003). Depth-dependent target strengths of gadoids by the boundary-element method. The Journal of the Acoustical Society of America, 114(6), 3136-3146.*  
+-  *Gastauer, S., Chu, D., & Cox, M. J. (2019). ZooScatR—An r package for modelling the scattering properties of weak scattering targets using the distorted wave Born approximation. The Journal of the Acoustical Society of America, 145(1), EL102-EL108.*  
+-  *Gastauer, S., Scoulding, B., Fässler, S. M., Benden, D. P., & Parsons, M. (2016). Target strength estimates of red emperor (Lutjanus sebae) with Bayesian parameter calibration. Aquatic Living Resources, 29(3), 301.*  
+-  *Gorska, N., & Ona, E. (2003). Modelling the acoustic effect of swimbladder compression in herring. ICES Journal of Marine Science, 60(3), 548-554.*  
+-  *Horne, J. K., Walline, P. D., & Jech, J. M. (2000). Comparing acoustic model predictions to in situ backscatter measurements of fish with dual‐chambered swimbladders. Journal of fish Biology, 57(5), 1105-1121.*  
+-  *Jech, J. M., Horne, J. K., Chu, D., Demer, D. A., Francis, D. T., Gorska, N., ... & Reeder, D. B. (2015). Comparisons among ten models of acoustic backscattering used in aquatic ecosystem research. The Journal of the Acoustical Society of America, 138(6), 3742-3764.*  
+-  *Macaulay, G. J., Peña, H., Fässler, S. M., Pedersen, G., & Ona, E. (2013). Accuracy of the Kirchhoff-approximation and Kirchhoff-ray-mode fish swimbladder acoustic scattering models. PloS one, 8(5), e64055.*  
+-  *Okumura, T., Masuya, T., Takao, Y., & Sawada, K. (2003). Acoustic scattering by an arbitrarily shaped body: An application of the boundary-element method. ICES Journal of Marine Science, 60(3), 563-570.*  
+-   *Reeder, D. B., & Stanton, T. K. (2004). Acoustic scattering by axisymmetric finite-length bodies: An extension of a two-dimensional conformal mapping method. The Journal of the Acoustical Society of America, 116(2), 729-746.*  
+-  *Stanton T.K. Sound scattering by cylinders of finite length. III. Deformed cylinders, Journal of the Acoustical Society of America, 1989, vol. 86 (pg. 691-705)*  
+-  *Zampolli, M., Tesei, A., Jensen, F. B., Malm, N., & Blottman III, J. B. (2007). A computationally efficient finite element model with perfectly matched layers applied to scattering from axially symmetric objects. The Journal of the Acoustical Society of America, 122(3), 1472-1485.*  
 
 - **Gas bubbles or swimbladders**
  * *Best:* 
