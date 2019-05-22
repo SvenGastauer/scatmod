@@ -30,7 +30,7 @@ In order to keep Scatmod consistent, documentation standards have been defined f
 
 *scatmod* is developped and maintained by members of the [ICES WGFAST group](https://www.ices.dk/community/groups/Pages/WGFAST.aspx) originating from various institutes including [NWFSC NOAA](https://www.nwfsc.noaa.gov/), [Scripps Institute Of Oceanography](https://scripps.ucsd.edu/), [St Andrews University](https://risweb.st-andrews.ac.uk/portal/en/organisations/school-of-biology(a348f890-b967-4e22-a8ae-75e33143747f).html), [NIWA](https://www.niwa.co.nz/our-science/coasts-and-oceans) and [CMR](https://www.cmr.no/)
 
-## Types of scattering models --- Start only
+## Types of scattering models
 
 Three major categories of scattering models can be distinguished:
 
@@ -83,6 +83,9 @@ Three major categories of scattering models can be distinguished:
 ## Which model to use? --- Start only
 
 <hr>
+
+### Overview Table  
+
 Modified from Jech et al. (2015)
 
 | Model       | Accuracy / Type           | Range of Validity  | Limitations  | Examples  |
@@ -96,7 +99,7 @@ Modified from Jech et al. (2015)
 | Modal series based DCM| Approximate| Near normal incidence; all frequencies; circular cross-sections; all material | off-normal incidence, low aspect ratios, irregular shapes with high local slopes| Gorska and Ona (2003); Stanton (1989) |
 | DWBA (incl PT-DWBA,SDWBA) | Approximate| Weak scatterers (g and h < 1.005 i.e. < 5%), all shapes, all angles | Strong scatterers (g and h > 5%)|Chu and Ye (1999); Demer et al. (2003); Calise and Skaret (2011); Gastauer et al. (2019)  |
 
-### Model Acoronyms:
+#### Model Acoronyms:
 - MSS - Exact Modal Series Solutions  
 - BEM - Boundary Element Model  
 - FEM - Finite Element Model  
@@ -105,7 +108,7 @@ Modified from Jech et al. (2015)
 - DCM - Deformed Cylinder scattering Model
 
 
-### References:
+#### References:
 -  *Anderson, V. C. (1950). Sound scattering from a fluid sphere. The Journal of the Acoustical Society of America, 22(4), 426-431.*  
 -  *Calise, L., and Skaret, G. (2011). “Sensitivity investigation of the SDWBA Antarctic krill target strength model to fatness, material contrasts and orientation,” Ccamlr Science 18, 97–122.*
 -  *Chu, D., and Ye, Z. (1999). “A phase-compensated distorted wave born approximation representation of the bistatic scattering by weakly scattering objects: Application to zooplankton,” J. Acoust. Soc. Am.106, 1732–1743.*  
@@ -122,6 +125,8 @@ Modified from Jech et al. (2015)
 -   *Reeder, D. B., & Stanton, T. K. (2004). Acoustic scattering by axisymmetric finite-length bodies: An extension of a two-dimensional conformal mapping method. The Journal of the Acoustical Society of America, 116(2), 729-746.*  
 -  *Stanton T.K. Sound scattering by cylinders of finite length. III. Deformed cylinders, Journal of the Acoustical Society of America, 1989, vol. 86 (pg. 691-705)*  
 -  *Zampolli, M., Tesei, A., Jensen, F. B., Malm, N., & Blottman III, J. B. (2007). A computationally efficient finite element model with perfectly matched layers applied to scattering from axially symmetric objects. The Journal of the Acoustical Society of America, 122(3), 1472-1485.*  
+
+<hr>
 
 - **Gas bubbles or swimbladders**
  * *Best:* 
