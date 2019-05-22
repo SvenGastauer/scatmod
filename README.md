@@ -212,8 +212,8 @@ Explain how to run the automated tests for this system
 
 ## Primary Authors
 
-* **Sven Gastauer** - *blablalbla
-* **Dezhang Chu** - *blablalbla
+* **Sven Gastauer** - *Antarctic Climate and Ecosystem Cooperative Research Centre, University of Tasmania, Private Bag 80, Hobart, Tasmania 7001, Australia*
+* **Dezhang Chu** - *Northwest Fisheries Science Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration, 2725 Montlake Boulevard East, Seattle, Washington 98112, USA*
 * **Roland Proud** - *blablalbla
 * **Yoann Ladroit** - *blablalbla
 * **Geir Pedersen** - *blablalbla
