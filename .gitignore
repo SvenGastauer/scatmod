@@ -2,7 +2,8 @@
  #to be excluded
  .ipynb_checkpoints
  .Rproj.user
- .RData
- .Rhistory
- .sos
+ *.RData
+ *.Rhistory
+ *.sos
+.*
  __pychache__
