@@ -1,3 +1,5 @@
+![alt text](https://github.com/SvenGastauer/scatmod/blob/master/docs/scatmod_logo.png?raw=true)
+
 # scatmod - Open Source Acoustic Scattering Models for fisheries acoustics
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
