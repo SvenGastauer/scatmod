@@ -1,8 +1,8 @@
     
  #to be excluded
- /R/scatmod/.Rproj.user
- /R/scatmod/.RData
- /R/scatmod/.Rhistory
- /python/.ipynb_checkpoints
- /python/.sos
- /python/__pychache__
+ .ipynb_checkpoints
+ .Rproj.user
+ .RData
+ .Rhistory
+ .sos
+ __pychache__
