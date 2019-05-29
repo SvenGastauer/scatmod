@@ -145,7 +145,7 @@ Modified from Jech et al. (2015)
 
 <hr>
 
-- **Gas bubbles or swimbladders**
+### Gas bubbles or swimbladders
  * *Best:* 
     - Numerical models for complex shapes e.g. BEM, FEM
     - Analystical solutions for simple shapes
@@ -178,7 +178,7 @@ Modified from Jech et al. (2015)
 <hr>
 
 
-- **Bones**
+### Bones
  * *Best:* 
     - Numerical models for complex shapes e.g. BEM, FEM
     - Analystical solutions for simple shapes
@@ -189,7 +189,7 @@ Modified from Jech et al. (2015)
 <hr>
 
  
-- **Fluid-like / flesh**
+### Fluid-like / flesh  
  * *Best:*
     - Numerical models for complex shapes e.g. BEM, FEM
     - Analystical solutions for simple shapes
