@@ -122,6 +122,7 @@ Modified from Jech et al. (2015)
 - FMM - Fourier Matching Method  
 - KA - Kirchhoff Approximation  
 - DCM - Deformed Cylinder scattering Model
+- DWBA - Distorted Wave Born Approximation
 
 
 #### References:
