@@ -5,8 +5,12 @@
 **Table of Contents** 
 
 - [About](#about)
-- [Types of scattering models --- Start only](#types-of-scattering-models-----start-only)
-- [Which model to use? --- Start only](#which-model-to-use-----start-only)
+- [Licence](#licence)
+- [Types of scattering models](#types-of-scattering-models)
+- [Which model to use?](#which-model-to-use)
+  - [Overview Table](#overview-table)
+    - [Model Acoronyms:](#model-acoronyms)
+    - [References:](#references)
 - [Model Descriptions](#model-descriptions)
 - [Multiscattering](#multiscattering)
 - [TO DO:](#to-do)
@@ -118,6 +122,7 @@ Modified from Jech et al. (2015)
 - FMM - Fourier Matching Method  
 - KA - Kirchhoff Approximation  
 - DCM - Deformed Cylinder scattering Model
+- DWBA - Distorted Wave Born Approximation
 
 
 #### References:
@@ -140,19 +145,40 @@ Modified from Jech et al. (2015)
 
 <hr>
 
-- **Gas bubbles or swimbladders**
+### Gas bubbles or swimbladders
  * *Best:* 
     - Numerical models for complex shapes e.g. BEM, FEM
     - Analystical solutions for simple shapes
  * *Easier:*
     - Resonance scattering: Find he resonance frequency, high frequencies for small bubbles, low frequencies for swimbladders
     - KRM: Limited to high frequencies, can be used for flesh and swimbladder if swimbladdered fish are to be modelled
- *Examples:*
+ *Examples:*  
+
+**BEM, FEM:**  
+-  *Macaulay, G. J., Peña, H., Fässler, S. M., Pedersen, G., & Ona, E. (2013). Accuracy of the Kirchhoff-approximation and Kirchhoff-ray-mode fish swimbladder acoustic scattering models. PloS one, 8(5), e64055.*  
+-  *Zampolli, M., Tesei, A., Jensen, F. B., Malm, N., & Blottman III, J. B. (2007). A computationally efficient finite element model with perfectly matched layers applied to scattering from axially symmetric objects. The Journal of the Acoustical Society of America, 122(3), 1472-1485.*  
+
+**Analytical Solutions:**  
+-  *Anderson, V. C. (1950). Sound scattering from a fluid sphere. The Journal of the Acoustical Society of America, 22(4), 426-431.*  
+-  *Gastauer, S., Chu, D., & Cox, M. J. (2019). ZooScatR—An r package for modelling the scattering properties of weak scattering targets using the distorted wave Born approximation. The Journal of the Acoustical Society of America, 145(1), EL102-EL108.*  
+
+**Resonance Scattering:**  
+- *Godø, O. R., Patel, R., & Pedersen, G. (2009). Diel migration and swimbladder resonance of small fish: some implications for analyses of multifrequency echo data. ICES Journal of Marine Science, 66(6), 1143-1148.*  
+- *Holliday, D. V. (1972). Resonance structure in echoes from schooled pelagic fish. The Journal of the Acoustical Society of America, 51(4B), 1322-1332.*  
+- *Love, R. H. (1978). Resonant acoustic scattering by swimbladder‐bearing fisha. The Journal of the Acoustical Society of America, 64(2), 571-580.*  
+- *McCartney, B. S., & Stubbs, A. R. (1971). Measurements of the acoustic target strengths of fish in dorsal aspect, including swimbladder resonance. Journal of Sound and Vibration, 15(3), 397-420.*  
+
+**KRM:**  
+-  *Gastauer, S., Scoulding, B., Fässler, S. M., Benden, D. P., & Parsons, M. (2016). Target strength estimates of red emperor (Lutjanus sebae) with Bayesian parameter calibration. Aquatic Living Resources, 29(3), 301.*  
+- *Hazen, E. L., & Horne, J. K. (2004). Comparing the modelled and measured target-strength variability of walleye pollock, Theragra chalcogramma. ICES Journal of Marine Science, 61(3), 363-377.*  
+- *Horne, J. K., Walline, P. D., & Jech, J. M. (2000). Comparing acoustic model predictions to in situ backscatter measurements of fish with dual‐chambered swimbladders. Journal of fish Biology, 57(5), 1105-1121.*  
+- *Horne, J. K. (2003). The influence of ontogeny, physiology, and behaviour on the target strength of walleye pollock (Theragra chalcogramma). Ices Journal of marine science, 60(5), 1063-1074.*  
+-  *Macaulay, G. J., Peña, H., Fässler, S. M., Pedersen, G., & Ona, E. (2013). Accuracy of the Kirchhoff-approximation and Kirchhoff-ray-mode fish swimbladder acoustic scattering models. PloS one, 8(5), e64055.*  
 
 <hr>
 
 
-- **Bones**
+### Bones
  * *Best:* 
     - Numerical models for complex shapes e.g. BEM, FEM
     - Analystical solutions for simple shapes
@@ -163,7 +189,7 @@ Modified from Jech et al. (2015)
 <hr>
 
  
-- **Fluid-like / flesh**
+### Fluid-like / flesh  
  * *Best:*
     - Numerical models for complex shapes e.g. BEM, FEM
     - Analystical solutions for simple shapes
@@ -226,10 +252,10 @@ Explain how to run the automated tests for this system
 
 * **Sven Gastauer** - *Antarctic Climate and Ecosystem Cooperative Research Centre, University of Tasmania, Private Bag 80, Hobart, Tasmania 7001, Australia*
 * **Dezhang Chu** - *Northwest Fisheries Science Center, National Marine Fisheries Service, National Oceanic and Atmospheric Administration, 2725 Montlake Boulevard East, Seattle, Washington 98112, USA*
-* **Roland Proud** - *blablalbla
-* **Yoann Ladroit** - *blablalbla
-* **Geir Pedersen** - *blablalbla
-* **Pablo Escobar** - *blablalbla
+* **Roland Proud** - *Pelagic Ecology Research Group, Gatty Marine Laboratory, Scottish Oceans Institute, University of St Andrews, St Andrews, Fife KY16 8LB, UK*  
+* **Yoann Ladroit** - *National Institute of Water and Atmospheric Research (NIWA) Ltd, Private Bag 14-901, Wellington 6241, New Zealand*  
+* **Geir Pedersen** - * Norwegian Research Centre (NORCE), Bergen, Norway*  
+* **Pablo Escobar** - *National Institute of Water and Atmospheric Research (NIWA) Ltd, Private Bag 14-901, Wellington 6241, New Zealand*  
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
