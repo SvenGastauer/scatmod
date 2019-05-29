@@ -1,7 +1,8 @@
     
  #to be excluded
  .ipynb_checkpoints
- .Rproj.user
+*/.Rproj.*
+/R/scatmod/.Rproj.user
  *.RData
  *.Rhistory
  *.sos
