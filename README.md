@@ -129,10 +129,14 @@ Modified from Jech et al. (2015)
 
 #### References:
 -  *Anderson, V. C. (1950). Sound scattering from a fluid sphere. The Journal of the Acoustical Society of America, 22(4), 426-431.*  
--  *Calise, L., and Skaret, G. (2011). “Sensitivity investigation of the SDWBA Antarctic krill target strength model to fatness, material contrasts and orientation,” Ccamlr Science 18, 97–122.*
+-  *Calise, L., and Skaret, G. (2011). “Sensitivity investigation of the SDWBA Antarctic krill target strength model to fatness, material contrasts and orientation,” Ccamlr Science 18, 97–122.*  
+-  *Chu, D., Foote, K. G., & Stanton, T. K. (1993). Further analysis of target strength measurements of Antarctic krill at 38 and 120 kHz: Comparison with deformed cylinder model and inference of orientation distribution. The Journal of the Acoustical Society of America, 93(5), 2985-2988.*  
 -  *Chu, D., and Ye, Z. (1999). “A phase-compensated distorted wave born approximation representation of the bistatic scattering by weakly scattering objects: Application to zooplankton,” J. Acoust. Soc. Am.106, 1732–1743.*  
+-  *Gauthier, S., & Horne, J. K. (2004). Acoustic characteristics of forage fish species in the Gulf of Alaska and Bering Sea based on Kirchhoff-approximation models. Canadian Journal of Fisheries and Aquatic Sciences, 61(10), 1839-1850.*  
 -  *Demer, D. A., and Conti, S. G. (2003). “Reconciling theoretical versus empirical target strengths of krill: Effects of phase variability on the distorted-wave Born approximation,” ICES J. Mar. Sci. 60, 429–434.*  
 -  *Francis, D. T., Foote, K. G., Alippi, A., & Cannelli, G. B. (1998). ‘Boundary-element-model predictions of acoustic scattering by swimbladder-bearing fish. In Proceedings of the Fourth European Conference on Underwater Acoustics (Vol. 1, pp. 255-260). Rome: CNR-IDAC.*  
+-  *Faran Jr, J. J. (1951). Sound scattering by solid cylinders and spheres. The Journal of the acoustical society of America, 23(4), 405-418.*  
+-  *Foote, K. G. (1985). Rather‐high‐frequency sound scattering by swimbladdered fish. The Journal of the Acoustical Society of America, 78(2), 688-700.*  
 -  *Francis, D. T., & Foote, K. G. (2003). Depth-dependent target strengths of gadoids by the boundary-element method. The Journal of the Acoustical Society of America, 114(6), 3136-3146.*  
 -  *Gastauer, S., Chu, D., & Cox, M. J. (2019). ZooScatR—An r package for modelling the scattering properties of weak scattering targets using the distorted wave Born approximation. The Journal of the Acoustical Society of America, 145(1), EL102-EL108.*  
 -  *Gastauer, S., Scoulding, B., Fässler, S. M., Benden, D. P., & Parsons, M. (2016). Target strength estimates of red emperor (Lutjanus sebae) with Bayesian parameter calibration. Aquatic Living Resources, 29(3), 301.*  
